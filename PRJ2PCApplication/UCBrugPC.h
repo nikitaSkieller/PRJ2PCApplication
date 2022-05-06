@@ -7,12 +7,13 @@
 class UCBrugPC
 {
 public:
-	UCBrugPC(Kode& Kode, UserInterface& userInterface, UC& UC);
+	UCBrugPC(Kode* KodePtr, UserInterface* userInterfacePtr, UC* UCPtr);
+	void runUC();
 private:
 	void checkCode(std::string code, std::string receivedCode);
-	Kode* Kode_;
+	Kode *Kode_;
 	bool correctCode_;
-	UserInterface* UserInterface_;
-	UC* UC_;
+	UserInterface *UserInterface_;
+	UC *UC_;
 };
 
