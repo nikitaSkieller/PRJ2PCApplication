@@ -1,11 +1,12 @@
 #pragma once
-#include "UCBrugPC.h"
+#include <string>
+
 class UserInterface
 {
 public:
 	void incorrectCode();
 	char showOptions();
-	string showLoginScreen();
+	std::string showLoginScreen();
 private:
 };
 
