@@ -1,15 +1,6 @@
 #include "UCBrugPC.h"
 
-UCBrugPC::UCBrugPC(Kode&)
-{
-}
-
-void UCBrugPC::codeReceived(std::string code)
-{
-	checkCode(code, codePointer_->getkode());
-}
-
-void UCBrugPC::optionChosen(std::string option)
+UCBrugPC::UCBrugPC(Kode& Kode, UserInterface& userInterface, UC& UC)
 {
 }
 
