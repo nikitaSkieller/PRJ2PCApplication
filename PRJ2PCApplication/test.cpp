@@ -7,9 +7,9 @@ using namespace std;
 
 int main()
 {
-	////test Kode.h
-	//Kode myCode = Kode();
-	//cout << myCode.getkode() << endl;	//skriver koden ud
+	//test Kode.h
+	Kode myCode = Kode();
+	cout << myCode.getkode() << endl;	//skriver koden ud
 
 	////test UserInterface.h
 	//UserInterface myUI = UserInterface();
@@ -25,7 +25,9 @@ int main()
 	Kode k1;
 	UserInterface UI1;
 	UC UC1;
-	UCBrugPC instanceUC(&k1, &UI1, &UC1);
-	instanceUC.runUC();
+	UCBrugPC instanceUC1(&k1, &UI1, &UC1);
+	UCBrugPC instanceUC2(&k1, &UI1, &UC1);
+	instanceUC1.runUC();	//indtast forkert kode, indtast rigtig kode, tast !1 eller 2, tast 1
+	instanceUC2.runUC();	//indtast rigtig kode, indtast 2;
 	return 0;
 }
