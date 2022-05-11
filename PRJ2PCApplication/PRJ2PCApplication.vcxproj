@@ -139,16 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ControllerArduino.h" />
+    <ClInclude Include="Countdown.h" />
     <ClInclude Include="Kode.h" />
     <ClInclude Include="UC.h" />
     <ClInclude Include="UCBrugPC.h" />
+    <ClInclude Include="UCVaelgModeFraPC.h" />
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ControllerArduino.cpp" />
+    <ClCompile Include="Countdown.cpp" />
     <ClCompile Include="Kode.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="UC.cpp" />
     <ClCompile Include="UCBrugPC.cpp" />
+    <ClCompile Include="UCVaelgModeFraPC.cpp" />
     <ClCompile Include="UserInterface.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

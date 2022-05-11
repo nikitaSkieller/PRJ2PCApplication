@@ -27,6 +27,15 @@
     <ClInclude Include="UC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Countdown.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerArduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCVaelgModeFraPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Kode.cpp">
@@ -42,6 +51,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Countdown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerArduino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCVaelgModeFraPC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
