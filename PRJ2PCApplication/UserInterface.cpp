@@ -34,3 +34,63 @@ string UserInterface::showLoginScreen()
 	cin >> receivedCode;
 	return receivedCode;
 }
+
+char UserInterface::showSelectMode()
+{
+	char userChoice;
+	while (true)
+	{
+		cout << "tryk 1 for homeMode, tryk 2 for home alone mode eller tryk 3 for away mode, ellers tryk c for fortryd" << endl;
+		cin >> userChoice;
+		if (userChoice == 'c')
+		{
+			return userChoice;
+		}
+		if (userChoice == '1' || userChoice == '2' || userChoice == '3')
+		{
+			cout << "du har valgt mode ";
+			if (userChoice=='1')
+			{
+				cout << "1 homeMode" << endl;
+			}
+			else if (userChoice == '2')
+			{
+				cout << "2 home alone Mode" << endl;
+			}
+			else if (userChoice == '3')
+			{
+				cout << "3 away mode" << endl;
+			}
+			cout << "tast j for at gemme, tryk c for at afbryde" << endl;
+			char confirmation;
+			cin >> confirmation;
+			if (confirmation=='c')
+			{
+				return confirmation;
+			}
+			else if (confirmation=='j')
+			{
+				cout << "valg bekraeftet, 10 sekunders countdown starter" << endl << "tryk c for at afbryde" << endl;
+				return userChoice;
+			}
+		}
+		cout << "ugyldigt valg" << endl;
+	}
+}
+
+bool UserInterface::isCancelHit()
+{
+	if (_kbhit())
+	{
+		if (_getch() == 'c')
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+void UserInterface::displayInt(int toDisplay)
+{
+	cout << "countdown " << toDisplay << endl;
+}

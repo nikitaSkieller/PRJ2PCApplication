@@ -2,7 +2,19 @@
 #include <iostream>
 using namespace std;
 
+UC::UC(UCVaelgModeFraPC* vaelgModeFraPC)
+{
+	UCVaelgModeFraPCPtr_ = vaelgModeFraPC;
+}
+
 void UC::startUC(char chosenUC)
 {
-	cout << "start UC er kaldt med " << chosenUC << endl;
+	if (chosenUC=='2')
+	{
+		UCVaelgModeFraPCPtr_->runUC();
+	}
+	if (chosenUC == '1')
+	{
+		cout << "der er valgt indstil sikkerhedssystem, dette er ikke implementeret";
+	}
 }
