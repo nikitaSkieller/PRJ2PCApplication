@@ -7,10 +7,10 @@
 class UCBrugPC
 {
 public:
-	UCBrugPC(Kode* KodePtr, UserInterface* userInterfacePtr, UC* UCPtr);
-	void runUC();
+	UCBrugPC(Kode* KodePtr, UserInterface* userInterfacePtr, UC* UCPtr);	//initialiserer attributter med parametre
+	void runUC();	//logikken. der kører metoderne i UCBrugPC i hht. sekvensdiagram
 private:
-	void checkCode(std::string code, std::string receivedCode);
+	void checkCode(std::string code, std::string receivedCode);	//UC bruger selv denne metode til at tjekke om indtastet kode og gemt kode er ens, ændrer correctCode_ i hht resultat
 	Kode *Kode_;
 	bool correctCode_;
 	UserInterface *UserInterface_;

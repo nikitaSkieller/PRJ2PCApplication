@@ -1,11 +1,10 @@
 #pragma once
 #include <string>
-using namespace std;
 
 class Kode
 {
 public:
-	string getkode();
+	std::string getkode();	//returnerer attributen Kode_
 private:
 	std::string Kode_ = "000000";
 };
