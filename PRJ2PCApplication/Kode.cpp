@@ -1,4 +1,5 @@
 #include "Kode.h"
+using namespace std;
 
 string Kode::getkode()
 {

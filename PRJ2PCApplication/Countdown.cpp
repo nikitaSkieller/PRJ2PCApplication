@@ -2,12 +2,13 @@
 
 void Countdown::startCountdown(int seconds)
 {
-    startTime_ = time(NULL)+seconds;
+    finishTime_ = time(NULL)+seconds;
     timeLeft_ = seconds;
 }
 
-int Countdown::getTimeLeft()
+int Countdown::calculateCurrentTimeLeft()
 {
-    timeLeft_ = startTime_ - time(NULL);
+    //ændrer timeLeft_ til aktuel tid tilbage
+    timeLeft_ = finishTime_ - time(NULL);
     return timeLeft_;
 }

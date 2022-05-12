@@ -38,10 +38,11 @@ string UserInterface::showLoginScreen()
 char UserInterface::showSelectMode()
 {
 	char userChoice;
+	//validerer brugerindtastning (cancel eller valg af mode samt får bekræftet indtastning
 	while (true)
 	{
 		cout << "tryk 1 for homeMode, tryk 2 for home alone mode eller tryk 3 for away mode, ellers tryk c for fortryd" << endl;
-		cin >> userChoice;
+		userChoice = _getch();
 		if (userChoice == 'c')
 		{
 			return userChoice;
@@ -63,7 +64,7 @@ char UserInterface::showSelectMode()
 			}
 			cout << "tast j for at gemme, tryk c for at afbryde" << endl;
 			char confirmation;
-			cin >> confirmation;
+			confirmation = _getch();
 			if (confirmation=='c')
 			{
 				return confirmation;
