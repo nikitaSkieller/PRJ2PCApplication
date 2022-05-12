@@ -25,7 +25,7 @@ void UCBrugPC::runUC()
 	UC_->startUC(UserInterface_->showOptions());
 }
 
-void UCBrugPC::checkCode(std::string code, std::string receivedCode)
+void UCBrugPC::checkCode(const std::string code, const std::string receivedCode)
 {
 	//gør kun noget hvis den korrekte kode er indtastet, ændrer correctCode_ til true
 	if (code==receivedCode)

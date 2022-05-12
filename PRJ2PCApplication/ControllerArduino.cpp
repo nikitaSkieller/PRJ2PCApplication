@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-void ControllerArduino::sendMode(char mode)
+void ControllerArduino::sendMode(const char mode)
 {
-	cout << "ControllerArduine Klasse er kalde med char: " << mode << endl;
+	cout << "ControllerArduino Klasse er kalde med char: " << mode << endl;
 }

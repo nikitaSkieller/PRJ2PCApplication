@@ -28,7 +28,7 @@ void UCVaelgModeFraPC::runUC()
 		{
 			return;
 		}
-		tempTimeLeft = CountdownPtr_->getTimeLeft();
+		tempTimeLeft = CountdownPtr_->calculateCurrentTimeLeft();
 		if (tempTimeLeft!=timeLeft)
 		{
 			UserinterfacePtr_->displayInt(tempTimeLeft);

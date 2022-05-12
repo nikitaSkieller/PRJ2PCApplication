@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void UserInterface::incorrectCode()
+void UserInterface::incorrectCode() const
 {
 	cout << "forkert kode, tryk paa en tast for at proeve igen" << endl;
 	while (!_kbhit())
@@ -91,7 +91,7 @@ bool UserInterface::isCancelHit()
 	return false;
 }
 
-void UserInterface::displayInt(int toDisplay)
+void UserInterface::displayInt(const int toDisplay)
 {
 	cout << "countdown " << toDisplay << endl;
 }

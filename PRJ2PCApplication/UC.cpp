@@ -7,7 +7,7 @@ UC::UC(UCVaelgModeFraPC* vaelgModeFraPC)
 	UCVaelgModeFraPCPtr_ = vaelgModeFraPC;
 }
 
-void UC::startUC(char chosenUC)
+void UC::startUC(const char chosenUC)
 {
 	//starter UC vaelg Mode fra PC, hvis parameter er 2
 	if (chosenUC=='2')

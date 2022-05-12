@@ -1,6 +1,6 @@
 #include "Countdown.h"
 
-void Countdown::startCountdown(int seconds)
+void Countdown::startCountdown(const int seconds)
 {
     finishTime_ = time(NULL)+seconds;
     timeLeft_ = seconds;
