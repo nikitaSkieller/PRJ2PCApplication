@@ -74,15 +74,8 @@ int main()
 	//UCVaelgModeFraPC myUCVaelgMode(&myArduino, &myUserInterface, &myCountdown);
 	//myUCVaelgMode.runUC();
 
-	ControllerArduino controllerInstance;
-	Countdown countdownInstance;
-	Kode kodeInstance;
-	UserInterface userinterfaceInstance;
-	UCVaelgModeFraPC UCVaelgModeInstance(&controllerInstance, &userinterfaceInstance, &countdownInstance);
-	UC UCInstance(&UCVaelgModeInstance);
-	UCBrugPC UCBrugPCInstance(&kodeInstance, &userinterfaceInstance, &UCInstance);
+	//
 
-	UCBrugPCInstance.runUC();
 
 	return 0;
 

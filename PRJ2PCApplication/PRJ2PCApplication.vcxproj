@@ -151,7 +151,7 @@
     <ClCompile Include="ControllerArduino.cpp" />
     <ClCompile Include="Countdown.cpp" />
     <ClCompile Include="Kode.cpp" />
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="UC.cpp" />
     <ClCompile Include="UCBrugPC.cpp" />
     <ClCompile Include="UCVaelgModeFraPC.cpp" />
