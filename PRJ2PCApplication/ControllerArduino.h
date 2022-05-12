@@ -2,7 +2,7 @@
 class ControllerArduino
 {
 public:
-	void sendMode(char);
+	void sendMode(char);	//sender den indtastede char til arduino
 private:
 };
 

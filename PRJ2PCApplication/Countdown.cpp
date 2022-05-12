@@ -3,11 +3,11 @@
 void Countdown::startCountdown(int seconds)
 {
     startTime_ = time(NULL)+seconds;
-    timeLeft = seconds;
+    timeLeft_ = seconds;
 }
 
 int Countdown::getTimeLeft()
 {
-    timeLeft = startTime_ - time(NULL);
-    return timeLeft;
+    timeLeft_ = startTime_ - time(NULL);
+    return timeLeft_;
 }
