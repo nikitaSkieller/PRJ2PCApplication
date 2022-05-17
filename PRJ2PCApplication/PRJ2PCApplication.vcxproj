@@ -142,6 +142,7 @@
     <ClInclude Include="ControllerArduino.h" />
     <ClInclude Include="Countdown.h" />
     <ClInclude Include="Code.h" />
+    <ClInclude Include="SimpleSerial.h" />
     <ClInclude Include="UC.h" />
     <ClInclude Include="UCBrugPC.h" />
     <ClInclude Include="UCVaelgModeFraPC.h" />
@@ -152,6 +153,7 @@
     <ClCompile Include="Countdown.cpp" />
     <ClCompile Include="Code.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SimpleSerial.cpp" />
     <ClCompile Include="UC.cpp" />
     <ClCompile Include="UCBrugPC.cpp" />
     <ClCompile Include="UCVaelgModeFraPC.cpp" />

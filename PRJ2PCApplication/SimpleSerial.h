@@ -1,4 +1,7 @@
+//visited 05-05-2022 from https://github.com/dmicha16/simple_serial_port
+//by David Michalik og Daquer, last commit to page Copyright 2018 David Michalik
 
+//all comments and changes by Nikita Barrett Skieller
 
 #pragma once
 
