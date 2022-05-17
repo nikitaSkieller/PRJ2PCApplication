@@ -3,8 +3,8 @@
 class UC
 {
 public:
-	UC(UCVaelgModeFraPC* vaelgModeFraPC);	//initialiserer UCVaelgModeFraPCPtr til parameterem (tilføjes flere hvis flere UC implementeres)
-	void startUC(const char); //starter UC indstil sikkerhedssystem hvis 1 ellers hvis 2 starter UC vælg mode
+	UC(UCVaelgModeFraPC* vaelgModeFraPC);
+	void startUC(const char); //starts UC: "UCindstilSikkerhedssystem" if 1, "UCvaelgModeFraPC if 2
 private:
 	UCVaelgModeFraPC* UCVaelgModeFraPCPtr_;
 };

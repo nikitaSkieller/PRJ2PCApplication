@@ -1,6 +1,6 @@
 #include "ControllerArduino.h"
 #include "Countdown.h"
-#include "Kode.h"
+#include "Code.h"
 #include "UC.h"
 #include "UCBrugPC.h"
 #include "UCVaelgModeFraPC.h"
@@ -8,15 +8,15 @@
 
 int main()
 {
-	//opretter instanser af alle klasser brugt i programmet
+	//instanses og all Classes in program
 	ControllerArduino controllerInstance;
 	Countdown countdownInstance;
-	Kode kodeInstance;
+	Code codeInstance;
 	UserInterface userinterfaceInstance;
 	UCVaelgModeFraPC UCVaelgModeInstance(&controllerInstance, &userinterfaceInstance, &countdownInstance);
 	UC UCInstance(&UCVaelgModeInstance);
-	UCBrugPC UCBrugPCInstance(&kodeInstance, &userinterfaceInstance, &UCInstance);
-	//starter program med UC brug PC
+	UCBrugPC UCBrugPCInstance(&codeInstance, &userinterfaceInstance, &UCInstance);
+	//starts UCBrugPC
 	UCBrugPCInstance.runUC();
 
 	return 0;

@@ -4,6 +4,7 @@
 #include "UC.h"
 #include "Countdown.h"
 #include "UCVaelgModeFraPC.h"
+#include "ControllerArduino.h"
 #include <iostream>
 #include <conio.h>
 using namespace std;
@@ -76,6 +77,16 @@ int main()
 
 	//
 
+	//test UC
+	ControllerArduino myController;
+	UserInterface myUI;
+	Countdown myCountdown;
+
+	UCVaelgModeFraPC myUCVaelgModeFraPC(&myController, &myUI, &myCountdown);
+	UC myUC(&myUCVaelgModeFraPC);
+	myUC.startUC('1');	//meddelelse om start af Uc ikke er implementeret
+	myUC.startUC('2');	//starter UC vaelg mode
+	myUC.startUC('3');	//gør ingenting
 
 	return 0;
 

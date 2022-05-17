@@ -8,7 +8,7 @@ void Countdown::startCountdown(const int seconds)
 
 int Countdown::calculateCurrentTimeLeft()
 {
-    //ændrer timeLeft_ til aktuel tid tilbage
+    //changes timeLeft_ to current time left
     timeLeft_ = finishTime_ - time(NULL);
     return timeLeft_;
 }

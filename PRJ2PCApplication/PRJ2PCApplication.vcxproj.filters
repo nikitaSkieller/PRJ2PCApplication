@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Kode.h">
+    <ClInclude Include="Code.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UCBrugPC.h">
@@ -38,7 +38,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Kode.cpp">
+    <ClCompile Include="Code.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UCBrugPC.cpp">

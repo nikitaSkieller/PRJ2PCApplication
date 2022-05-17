@@ -3,8 +3,8 @@
 class Countdown
 {
 public:
-	void startCountdown(const int);	//gemmer aktuelle time_t + parameteren i startTime_ og initierer timeLeft_ til parameteren.
-	int calculateCurrentTimeLeft();	//sammenligner nuværende tid med startTime_, ændrer timeLeft til ny værdi og returnerer differencen.
+	void startCountdown(const int);	//saves the sum of current time and the parameter to startTime_ and initiates timeLeft_ to the parameter. 
+	int calculateCurrentTimeLeft();	//compares current time to startTime_ and changes timeLeft to the differens and returns the difference
 private:
 	time_t finishTime_;
 	int timeLeft_;

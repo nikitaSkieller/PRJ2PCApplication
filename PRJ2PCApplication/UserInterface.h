@@ -4,12 +4,12 @@
 class UserInterface
 {
 public:
-	void incorrectCode() const;	//udskriver skærm for forkert indtastet kode
-	char showOptions();	//udskriver skærm for valg af funktioner i program(vælg mode eller indstillinger), returnerer valg
-	std::string showLoginScreen();	//viser loginSkærm, returnerer indtastning
-	char showSelectMode();	// viser valg for modes
-	bool isCancelHit();	//tjekker, om der er trykket på 'c'
-	void displayInt(const int);	//udskriver den valgte parameter
+	void incorrectCode() const;	//runs communication for wrong code through console
+	char showOptions();	//runs communication for choices, return userchoice "vaelg mode" or "indstillinger"
+	std::string showLoginScreen();	//runs login communication, returns entry
+	char showSelectMode();	//shows mode choices
+	bool isCancelHit();	//checks if cancel is pressed
+	void displayInt(const int);	//write parameter to console
 private:
 };
 

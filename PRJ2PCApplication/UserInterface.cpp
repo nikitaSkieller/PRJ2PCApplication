@@ -8,7 +8,7 @@ using namespace std;
 
 void UserInterface::incorrectCode() const
 {
-	cout << "forkert kode, tryk paa en tast for at proeve igen" << endl;
+	cout << "forkert code, tryk paa en tast for at proeve igen" << endl;
 	while (!_kbhit())
 	{
 	}
@@ -29,7 +29,7 @@ char UserInterface::showOptions()
 
 string UserInterface::showLoginScreen()
 {
-	cout << "indtast kode: " << endl;
+	cout << "indtast code: " << endl;
 	string receivedCode;
 	cin >> receivedCode;
 	return receivedCode;
@@ -62,17 +62,27 @@ char UserInterface::showSelectMode()
 			{
 				cout << "3 away mode" << endl;
 			}
-			cout << "tast j for at gemme, tryk c for at afbryde" << endl;
+			
 			char confirmation;
-			confirmation = _getch();
-			if (confirmation=='c')
+			while (true)
 			{
-				return confirmation;
-			}
-			else if (confirmation=='j')
-			{
-				cout << "valg bekraeftet, 10 sekunders countdown starter" << endl << "tryk c for at afbryde" << endl;
-				return userChoice;
+				cout << "tast j for at gemme, tryk c for at afbryde" << endl;
+				confirmation = _getch();
+				if (confirmation == 'c')
+				{
+					return confirmation;
+				}
+				else if (confirmation == 'j')
+				{
+					system("cls");
+					cout << "valg bekraeftet, 10 sekunders countdown starter" << endl;
+					cout << "tryk c for at afbryde" << endl;
+					return userChoice;
+				}
+				else
+				{
+					cout << "ugyldigt valg" << endl;
+				}
 			}
 		}
 		cout << "ugyldigt valg" << endl;

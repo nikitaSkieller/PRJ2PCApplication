@@ -3,14 +3,15 @@
 
 int main()
 {
-	SimpleSerial serialCom("COM3", 9600);
+	SimpleSerial serialCom("COM4", 9600);
 
-	cout << serialCom.WriteSerialPort("1") << endl;
-
-	while (1)
+	while (true)
 	{
-		char pressedKey = _getch();
-		serialCom.WriteSerialPort(&pressedKey);
+		cout << serialCom.WriteSerialPort("m1\n") << endl;
+		Sleep(1000);
+		cout << serialCom.WriteSerialPort("m2\n") << endl;
+		Sleep(1000);
+		cout << serialCom.WriteSerialPort("m3\n") << endl;
 	}
 
 	return 0;
