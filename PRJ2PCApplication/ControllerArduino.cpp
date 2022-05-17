@@ -2,7 +2,15 @@
 #include <iostream>
 using namespace std;
 
+ControllerArduino::ControllerArduino() : arduinoCommunication("COM3", 9600)
+{
+}
+
 void ControllerArduino::sendMode(const char mode)
 {
-	cout << "ControllerArduino Klasse er kalde med char: " << mode << endl;
+	if (mode=='1' | mode=='2')
+	{
+		cout << "kaldt" << endl;
+		arduinoCommunication.WriteSerialPort(("m" + mode));
+	}
 }
