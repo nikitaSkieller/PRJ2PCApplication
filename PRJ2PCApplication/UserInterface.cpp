@@ -16,6 +16,7 @@ void UserInterface::incorrectCode() const
 
 char UserInterface::showOptions()
 {
+	system("cls");
 	cout << "tryk 1 for indstil sikkerhedssystem, tryk 2 for vaelg mode" << endl;
 	char pressedkey = _getch();
 	while (pressedkey != '1' && pressedkey != '2')
@@ -41,13 +42,14 @@ char UserInterface::showSelectMode()
 	//validerer brugerindtastning (cancel eller valg af mode samt får bekræftet indtastning
 	while (true)
 	{
-		cout << "tryk 1 for homeMode, tryk 2 for home alone mode eller tryk 3 for away mode, ellers tryk c for fortryd" << endl;
+		system("cls");
+		cout << "tryk 1 for homeMode, tryk 2 for home alone mode, ellers tryk c for fortryd" << endl;
 		userChoice = _getch();
 		if (userChoice == 'c')
 		{
 			return userChoice;
 		}
-		if (userChoice == '1' || userChoice == '2' || userChoice == '3')
+		if (userChoice == '1' || userChoice == '2')
 		{
 			cout << "du har valgt mode ";
 			if (userChoice=='1')
@@ -57,10 +59,6 @@ char UserInterface::showSelectMode()
 			else if (userChoice == '2')
 			{
 				cout << "2 home alone Mode" << endl;
-			}
-			else if (userChoice == '3')
-			{
-				cout << "3 away mode" << endl;
 			}
 			
 			char confirmation;
@@ -85,7 +83,8 @@ char UserInterface::showSelectMode()
 				}
 			}
 		}
-		cout << "ugyldigt valg" << endl;
+		cout << "ugyldigt valg, tryk paa en tast for at vaelge mode igen" << endl;
+		_getch();
 	}
 }
 
