@@ -31,9 +31,19 @@ char UserInterface::showOptions()
 string UserInterface::showLoginScreen()
 {
 	cout << "indtast code: " << endl;
-	string receivedCode;
-	cin >> receivedCode;
-	return receivedCode;
+	char receivedChar = 0;
+	string code;
+	while (receivedChar != '\r')
+	{
+		receivedChar = _getch();
+		if (receivedChar!='\r')
+		{
+			code.push_back(receivedChar);
+			cout << "*";
+		}
+
+	}
+	return code;
 }
 
 char UserInterface::showSelectMode()
