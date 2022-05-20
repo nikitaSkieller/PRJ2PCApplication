@@ -19,7 +19,7 @@ void UC::startUC(const char chosenUC)
 	if (chosenUC == '1')
 	{
 		system("cls");
-		cout << "der er valgt indstil sikkerhedssystem, dette er ikke implementeret\ntryk paa en tast for at starte programmet forfra";
+		cout << "der er valgt indstil sikkerhedssystem, dette er ikke implementeret\ntryk paa en tast for at starte programmet forfra" << endl;
 		_getch();
 	}
 }
