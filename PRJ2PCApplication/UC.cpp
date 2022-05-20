@@ -1,5 +1,6 @@
 #include "UC.h"
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 UC::UC(UCVaelgModeFraPC* vaelgModeFraPC)
@@ -17,6 +18,8 @@ void UC::startUC(const char chosenUC)
 	//starts UCIndstilSikkerhedssystem, if the parameter is 1 (not impelemnted)
 	if (chosenUC == '1')
 	{
-		cout << "der er valgt indstil sikkerhedssystem, dette er ikke implementeret";
+		system("cls");
+		cout << "der er valgt indstil sikkerhedssystem, dette er ikke implementeret\ntryk paa en tast for at starte programmet forfra";
+		_getch();
 	}
 }

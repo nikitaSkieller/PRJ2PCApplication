@@ -10,7 +10,7 @@ UCBrugPC::UCBrugPC(Code* codePtr, UserInterface* userInterfacePtr, UC* UCPtr)
 
 void UCBrugPC::runUC()
 {
-
+	system("cls");
 	while (correctCode_==false)
 	{
 		//check if user entry is correct coe
@@ -23,6 +23,7 @@ void UCBrugPC::runUC()
 	}
 	//run next UC
 	UC_->startUC(UserInterface_->showOptions());
+	correctCode_ = false;
 }
 
 void UCBrugPC::checkCode(const std::string code, const std::string receivedCode)

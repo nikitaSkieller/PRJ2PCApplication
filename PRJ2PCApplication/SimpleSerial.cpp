@@ -1,12 +1,11 @@
-//hentet 05-05-2022 fra https://github.com/dmicha16/simple_serial_port
-//af David Michalik og Daquer, sidste commit til siden 28-08-2011
+//visited 05-05-2022 from https://github.com/dmicha16/simple_serial_port
+//by David Michalik og Daquer, last commit to page Copyright 2018 David Michalik
 
-//alle kommentarer er af Nikita Barrett Skieller
+//all comments and changes by Nikita Barrett Skieller
 
-//slettet dette: #include "stdafx.h"	
 #include "SimpleSerial.h"
 
-SimpleSerial::SimpleSerial(const char* com_port, DWORD COM_BAUD_RATE)	//tilføjet const
+SimpleSerial::SimpleSerial(const char* com_port, DWORD COM_BAUD_RATE)	//added const
 {
 	connected_ = false;
 
