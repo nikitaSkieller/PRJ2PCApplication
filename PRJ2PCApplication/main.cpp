@@ -21,7 +21,7 @@ int main()
 	//loop for test
 	while (true)
 	{
-		cout << "Hvis der er en fejlmeddelelse herover indtast ny COM port i controller arduino constructor og start programmet igen\ntast 1 for login, tast 2 for sluk program" << endl;
+		cout << "Hvis der er en fejlmeddelelse herover indtast ny COM port i controllerArduino constructor og start programmet igen\ntast 1 for login, tast 2 for sluk program" << endl;
 		choice=_getch();
 		switch (choice)
 		{
