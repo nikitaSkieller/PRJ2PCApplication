@@ -2,14 +2,18 @@
 #include <iostream>
 using namespace std;
 
-ControllerArduino::ControllerArduino() : arduinoCommunication("COM3", 9600)
+ControllerArduino::ControllerArduino() : arduinoCommunication("COM4", 9600)
 {
 }
 
 void ControllerArduino::sendMode(const char mode)
 {
-	if (mode=='1' || mode=='2')
+	if (mode=='1')
 	{
-		arduinoCommunication.WriteSerialPort(("m" + mode));
+		arduinoCommunication.WriteSerialPort("m1\n");
+	}
+	if (mode=='2')
+	{
+		arduinoCommunication.WriteSerialPort("m2\n");
 	}
 }
